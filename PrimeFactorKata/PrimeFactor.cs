@@ -7,5 +7,9 @@ namespace PrimeFactorKata
 {
     public class PrimeFactor
     {
+        public IEnumerable<int> GetList(int n)
+        {
+            return null;
+        }
     }
 }

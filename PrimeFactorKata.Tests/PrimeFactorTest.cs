@@ -26,7 +26,13 @@ namespace PrimeFactorKata.Tests
         [Test]
         public void Test_PrimeFactor_1_Equals_Null()
         {
-            Assert.Fail("PrimeFactor class doesn't present generation method.");
+            Assert.AreEqual(null, primefactor.GetList(1));
+        }
+
+        [Test]
+        public void Test_PrimeFactor_2_Equals_2()
+        {
+            Assert.AreEqual(new List<int> { 2 }, primefactor.GetList(2));
         }
     }
 }

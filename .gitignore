@@ -17,6 +17,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# .NET Compiled and Debug files
+*\obj\*
+*\bin\*
+
 # =========================
 # Operating System Files
 # =========================
