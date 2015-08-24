@@ -12,7 +12,15 @@ namespace PrimeFactorKata
             IList<int> back = new List<int>();
             if (1 < n)
             {
-                back.Add(2);
+                if (0 == (n % 2))
+                {
+                    back.Add(2);
+                    n /= 2;
+                }
+                if (1 < n)
+                {
+                    back.Add(n);
+                }
             }
             return back;
         }
