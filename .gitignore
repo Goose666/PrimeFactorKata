@@ -18,8 +18,9 @@ $RECYCLE.BIN/
 *.lnk
 
 # .NET Compiled and Debug files
-.pdb
-.dll
+*/bin/*
+*/obj/*
+*/obj/Debug/*.cache
 
 # =========================
 # Operating System Files
