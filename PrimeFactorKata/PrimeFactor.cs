@@ -10,18 +10,9 @@ namespace PrimeFactorKata
         public IEnumerable<int> GetList(int n)
         {
             IList<int> back = new List<int>();
-            if (1 < n)
-            {
-                while (0 == (n % 2))
-                {
-                    back.Add(2);
-                    n /= 2;
-                }
-                if (1 < n)
-                {
-                    back.Add(n);
-                }
-            }
+            for (int factor = 2, lim = n; 1 < n; factor++)
+                for (; 0 == (n % factor); n /= factor)
+                    back.Add(factor);
             return back;
         }
     }
