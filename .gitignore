@@ -21,6 +21,8 @@ $RECYCLE.BIN/
 */bin/*
 */obj/*
 */obj/Debug/*.cache
+*.suo
+*.user
 
 # =========================
 # Operating System Files

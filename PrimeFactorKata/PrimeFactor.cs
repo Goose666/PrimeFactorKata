@@ -9,7 +9,12 @@ namespace PrimeFactorKata
     {
         public IEnumerable<int> GetList(int n)
         {
-            return null;
+            IList<int> back = new List<int>();
+            if (1 < n)
+            {
+                back.Add(2);
+            }
+            return back;
         }
     }
 }

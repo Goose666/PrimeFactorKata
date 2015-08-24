@@ -24,15 +24,21 @@ namespace PrimeFactorKata.Tests
         }
 
         [Test]
-        public void Test_PrimeFactor_1_Equals_Null()
+        public void Test_PrimeFactor_1_Returns_Null()
         {
-            Assert.AreEqual(null, primefactor.GetList(1));
+            Assert.AreEqual(new List<int>(), primefactor.GetList(1));
         }
 
         [Test]
-        public void Test_PrimeFactor_2_Equals_2()
+        public void Test_PrimeFactor_2_Returns_2()
         {
             Assert.AreEqual(new List<int> { 2 }, primefactor.GetList(2));
+        }
+
+        [Test]
+        public void Test_PrimeFactor_3_Returns_3()
+        {
+            Assert.AreEqual(new List<int> { 3 }, primefactor.GetList(3));
         }
     }
 }
