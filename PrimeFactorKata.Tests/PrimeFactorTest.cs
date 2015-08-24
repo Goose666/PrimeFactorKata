@@ -64,5 +64,11 @@ namespace PrimeFactorKata.Tests
         {
             Assert.AreEqual(new List<int> { 2, 2, 2 }, primefactor.GetList(8));
         }
+
+        [Test]
+        public void Test_PrimeFactor_9_Returns_3_3()
+        {
+            Assert.AreEqual(new List<int> { 3, 3 }, primefactor.GetList(9));
+        }
     }
 }
